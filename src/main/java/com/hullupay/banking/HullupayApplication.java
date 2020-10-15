@@ -21,8 +21,7 @@ public class HullupayApplication {
 	}
 	@GetMapping("/")
 	public Customer index(@RequestParam(value = "name", defaultValue = "World") String name) {
-
-	return  new Customer("0913152020","Yohannes Mitike Mamo");
+	return  new Customer("0913152020","Solomon Eyerusale Yohannes");
 	}
 
 }

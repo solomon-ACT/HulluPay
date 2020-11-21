@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+//import { AuthenticationService } from '../app/Services/authentication/authentication.service';
+import { LoginComponent } from 'src/app/login/login.component'
+import { RegisterComponent } from './register/register.component';
+import { AdminComponent } from './admin/admin.component';
+
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +12,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hulluPay-todolist';
+  title = 'HulluPay Login';
+  
+  
+
+  constructor(){
+
+  }
+
+  logout(){
+    
+  }
+
+
+ 
 }

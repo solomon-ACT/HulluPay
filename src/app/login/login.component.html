@@ -1,0 +1,52 @@
+<body >
+  <div class="cotn_principal" >
+    <div class="cont_centrar">
+      <div class="cont_login">
+        <div class="cont_info_log_sign_up">
+          <div class="col_md_login">
+            <div class="cont_ba_opcitiy">
+              <h2>LOGIN</h2>
+              <p>እንኳን ወደ ለሁሉ ክፍያ በሰላም መጡ</p>
+              <button class="btn_login" (click)="cambiar_login()">LOGIN</button>
+            </div>
+          </div>
+          <div class="col_md_sign_up">
+            <div class="cont_ba_opcitiy">
+              <h2>SIGN UP</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class="btn_sign_up" (click)="cambiar_sign_up()">SIGN UP</button>
+            </div>
+          </div>
+        </div>
+        <div class="cont_back_info">
+          <div class="cont_img_back_grey"> <img src="./../assets/images/1.jpg" alt="" /> </div>
+        </div>
+        <div class="cont_forms" >
+         <div class="cont_img_back_"> <img src="./../assets/images/1.jpg" alt="" /> </div>
+         <div id="cont_form_login"> 
+              <a href="#" (click)="ocultar_login_sign_up()" ><i class="fa fa-window-close" aria-hidden="true"></i></a>
+              <h2>LOGIN</h2>
+              <input  type="email" name = "username"  placeholder="Email" (keyup)="onKey($event, 'email')"  (change)="onKey($event, 'email')"  required autofocus  />
+              
+              <input type="password" name="password" placeholder="Password" (keyup)="onKey($event, 'password')" (change)="onKey($event, 'credantial')" required  />
+              
+              <button class="btn_login" (click)="onSubmit()"  type="submit">LOGIN</button>
+         </div>
+          <div id="cont_form_sign_up"> <a href="#" (click)="ocultar_login_sign_up()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+            <h2>SIGN UP</h2>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Middle Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="text" placeholder="Birth Day" />
+            <input type="text" placeholder="Nationality" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Phone Number" />
+            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Confirm Password" />
+            <button class="btn_sign_up" (click)="cambiar_sign_up()">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
